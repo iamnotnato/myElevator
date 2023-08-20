@@ -20,7 +20,7 @@
 
 <br>
 
-> 🖥️ **Setup:**
+> 🖥️ **Workstation:**
 
 <table>
   <tr>
