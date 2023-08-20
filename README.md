@@ -2,24 +2,9 @@
 > A visual first step into coding!
 
 <br>
-
-<div>
-  <a href="https://github.com/iamnotnato/alx-system_engineering-devops">
-    <img src="https://github.com/iamnotnato/alx-system_engineering-devops/blob/master/images/devops1.png" alt="Logo" width="450" height="300">
-  </a>
-</div>
-
-<br>
-
-<div>
- <a href="https://www.atlassian.com/devops/frameworks/team-structure">Image by atlassian.com</a>
-</div>
-
-<br>
-
 > 📝 **Summary:**
 
-> These are projects that helped me understand bash scripting.
+>  A visual first step into coding!
 
 <br>
 
