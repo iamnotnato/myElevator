@@ -20,7 +20,7 @@
 
 <br>
 
-> 🖥️ **Integrated Development Environment:**
+> 🖥️ **Setup:**
 
 <table>
   <tr>
