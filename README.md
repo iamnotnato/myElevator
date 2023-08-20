@@ -2,8 +2,8 @@
 > A visual first step into coding!
 
 <br>
-> 📝 **Summary:**
 
+> 📝 **Summary:**
 >  A visual first step into coding!
 
 <br>
