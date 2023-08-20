@@ -32,6 +32,6 @@
 
 <br>
 
-![Alt](https://repobeats.axiom.co/api/embed/91ac37b53e43b84fc8bee59df74f32cb4c53c465.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/007ec0debef7cf33d24c7233257ec241c0d82bef.svg "Repobeats analytics image")
 
 <br>
