@@ -1,0 +1,10 @@
+.fade {
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  audio {
+    display: none;
+  }
