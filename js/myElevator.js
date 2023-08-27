@@ -22,16 +22,20 @@ document.getElementById("demo").innerHTML = 'Elevator Requested';
 
 function myFunction() {
   document.getElementById("myDIV").style.position = "absolute";
+  document.getElementById("demo").innerHTML = 'Going Up';
 }
 
 function myFunction2() {
   document.getElementById("myDIV2").style.position = "absolute";
+  document.getElementById("demo").innerHTML = 'Going Up';
 }
 
 function myreverseFunction() {
   document.getElementById("myDIV").style.position = "relative";
+  document.getElementById("demo").innerHTML = 'Going Down';
 }
 
 function myreverseFunction2() {
     document.getElementById("myDIV2").style.position = "relative";
+    document.getElementById("demo").innerHTML = 'Going Down';
   }
