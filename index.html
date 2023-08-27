@@ -12,12 +12,11 @@
     <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="css/bootstrap-utilities.min.css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
-    <link href="css/myElevator.css" rel="stylesheet">
   
   </head>
 
   <style> 
-    #myDIV {
+    #myDIV #myDIV2{
       border: 1px solid black;
       background-color: lightblue;
       width: 300px;
@@ -47,28 +46,26 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-3">
-          <h4>Elevator 1</h4>
           <div id="myDIV">
-            <p>This DIV element is placed 20 pixels from the top of its original position.</p>
-            <p>Click the button to set the position property to "absolute" and see what happens.</p>
-            <p>It will then be placed 20 pixels from the top the page.</p>
-          </div>
-
-          <br>
-          <button onclick="myFunction()">Try it</button>
-
+          <img src="images/elevatoricon.png" height="300px" id="myDIV">
+          <h4 id="myDIV">Elevator 1</h4>
+               <br>
+          <button onclick="myFunction()">Up</button>
+          <button onclick="myreverseFunction()">Down</button>
         </div>
+        </div>
+
+
         <div class="col-3">
-          <h4>Elevator 2</h4>
-          <div id="myDIV">
-            <p>This DIV element is placed 20 pixels from the top of its original position.</p>
-            <p>Click the button to set the position property to "absolute" and see what happens.</p>
-            <p>It will then be placed 20 pixels from the top the page.</p>
-          </div>
-
-          <br>
-          <button onclick="myFunction()">Try it</button>
+          <div id="myDIV2">
+          <img id="myDIV" src="images/elevatoricon.png" height="300px">
+          <h4 id="myDIV">Elevator 2</h4>
+                    <br>
+          <button onclick="myFunction2()">Up</button>
+          <button onclick="myreverseFunction2()">Down</button>
         </div>
+      </div>
+
         <div class="col-6">
           <p id="demo"></p>
 
@@ -77,7 +74,7 @@
     </div>
 
 <audio src="audio/elevatorMusic.mp3"></audio>
-<button type="button" id="button" class="btn btn-primary">
+<button type="button" id="audiobutton">
 <i class="fa-solid fa-volume-high"></i>
 </button>
 
@@ -88,12 +85,6 @@
 
 Logo
    <a href="https://www.vecteezy.com/free-vector/elevator-logo">Elevator Logo Vectors by Vecteezy</a>
-
-<script>
-function myFunction() {
-  document.getElementById("myDIV").style.position = "absolute";
-}
-</script>
 
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

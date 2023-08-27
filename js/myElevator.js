@@ -1,5 +1,5 @@
-const button = document.querySelector("#button");
-const icon = document.querySelector("#button > i");
+const button = document.querySelector("#audiobutton");
+const icon = document.querySelector("#audiobutton > i");
 const audio = document.querySelector("audio");
 
 button.addEventListener("click", () => {
@@ -19,3 +19,19 @@ button.addEventListener("click", () => {
 
 
 document.getElementById("demo").innerHTML = 'Elevator Requested';
+
+function myFunction() {
+  document.getElementById("myDIV").style.position = "absolute";
+}
+
+function myFunction2() {
+  document.getElementById("myDIV2").style.position = "absolute";
+}
+
+function myreverseFunction() {
+  document.getElementById("myDIV").style.position = "relative";
+}
+
+function myreverseFunction2() {
+    document.getElementById("myDIV2").style.position = "relative";
+  }
