@@ -1,0 +1,27 @@
+section {
+    height: 25vh;
+  }
+  section:nth-child(1) {
+    background: lightblue;
+  }
+  section:nth-child(2) {
+    background: lightgreen;
+  }
+  section:nth-child(3) {
+    background: purple;
+  }
+  section:nth-child(4) {
+    background: red;
+  }
+  section:nth-child(5) {
+    background: yellow;
+  } 
+
+
+  aside {
+    width: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    height: 75vh;
+}

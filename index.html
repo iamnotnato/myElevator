@@ -12,6 +12,7 @@
     <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="css/bootstrap-utilities.min.css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/myELevator.css" rel="stylesheet">
   
   </head>
 
@@ -41,13 +42,42 @@
             <h4>A visual first step into coding!</h4>
              </div>
       </div>
-    </header>
+    </header>  
+
+    <aside>
+      <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+    </aside>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <section><h6>Section 1</h6></section>
+        </div>
+        <div class="col">
+          <section><h6>Section 2</h6></section>
+        </div>
+        <div class="col">
+          <section><h6>Section 2</h6></section>
+        </div>
+
+        <div class="col">
+          <section><h6>Section 2</h6></section>
+        </div>
+      </div>
+    </div>
+
   
+
+  
+   
+  
+
+    <!--
     <div class="container text-center">
       <div class="row">
         <div class="col-3">
           <div id="myDIV">
-          <img src="images/elevatoricon.png" height="300px" id="myDIV">
+          <img src="images/elevatoriconbare.png" height="300px" id="myDIV">
           <h4 id="myDIV">Elevator 1</h4>
                <br>
           <button onclick="myFunction()">Up</button>
@@ -58,7 +88,8 @@
 
         <div class="col-3">
           <div id="myDIV2">
-          <img id="myDIV" src="images/elevatoricon.png" height="300px">
+            <img src="images/elevatoriconbare.png" height="300px" id='i1' style="position:absolute; left: 500; top: 100;">
+            <br><br><br><br>
           <h4 id="myDIV">Elevator 2</h4>
                     <br>
           <button onclick="myFunction2()">Up</button>
@@ -86,7 +117,49 @@
 Logo
    <a href="https://www.vecteezy.com/free-vector/elevator-logo">Elevator Logo Vectors by Vecteezy</a>
 
+   <br>
+
+
+     <input type=button onClick=move_img('up') value='Up'>
+<br>
+<input type=button onClick=move_img('left') value='Left'>
+<input type=button onClick=move_img('right') value='right'>
+<br>
+     <input type=button onClick=move_img('down') value='down'>
+
+   <script language='JavaScript' type='text/JavaScript'>
+    <!--
+    function move_img(str) {
+    var step=50; // change this to different step value
+    switch(str){
+    case "down":
+    var x=document.getElementById('i1').offsetTop;
+    x= x + step;
+    document.getElementById('i1').style.top= x + "px";
+    break;
     
+    case "up":
+    var x=document.getElementById('i1').offsetTop;
+    x= x -step;
+    document.getElementById('i1').style.top= x + "px";
+    break;
+    
+    case "left":
+    var y=document.getElementById('i1').offsetLeft;
+    y= y - step;
+    document.getElementById('i1').style.left= y + "px";
+    break;
+    
+    case "right":
+    var y=document.getElementById('i1').offsetLeft;
+    y= y + step;
+    document.getElementById('i1').style.left= y + "px";
+    break;
+    }
+    }
+    //-->
+    </script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
