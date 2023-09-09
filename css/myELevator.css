@@ -18,10 +18,18 @@ section {
   } 
 
 
-  aside {
-    width: 200px;
-    border: 1px solid black;
-    margin: 10px;
-    float: left;
-    height: 75vh;
+aside {
+  width: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  float: left;
+  height: 75vh;
+}
+
+aside2 {
+  width: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  float: right;
+  height: 75vh;
 }
