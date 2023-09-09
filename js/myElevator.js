@@ -1,6 +1,7 @@
 const button = document.querySelector("#audiobutton");
 const icon = document.querySelector("#audiobutton > i");
 const audio = document.querySelector("audio");
+const image = document.querySelector("image");
 
 button.addEventListener("click", () => {
   if (audio.paused) {
@@ -38,4 +39,22 @@ function myreverseFunction() {
 function myreverseFunction2() {
     document.getElementById("myDIV2").style.position = "relative";
     document.getElementById("demo").innerHTML = 'Going Down';
+  }
+
+
+  function move_img(str) {
+    var step=25; // change this to different step value
+    switch(str){
+    case "down":
+    var x=document.getElementById('i1').offsetTop;
+    x= x + step;
+    document.getElementById('i1').style.top= x + "px";
+    break;
+    
+    case "up":
+    var x=document.getElementById('i1').offsetTop;
+    x= x -step;
+    document.getElementById('i1').style.top= x + "px";
+    break;
+  }
   }
