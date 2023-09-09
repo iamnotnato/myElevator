@@ -43,7 +43,7 @@ function myreverseFunction2() {
 
 
   function move_img(str) {
-    var step=25; // change this to different step value
+    var step=125; // change this to different step value
     switch(str){
     case "down":
     var x=document.getElementById('i1').offsetTop;
