@@ -58,3 +58,11 @@ function myreverseFunction2() {
     break;
   }
   }
+
+  function hideElevator() {
+    document.getElementById("i1").style.visibility = "hidden";
+  }
+
+  function showElevator() {
+    document.getElementById("i1").style.visibility = "visible";
+  }
