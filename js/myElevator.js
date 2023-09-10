@@ -66,3 +66,9 @@ function myreverseFunction2() {
   function showElevator() {
     document.getElementById("i1").style.visibility = "visible";
   }
+
+
+function defaultElevatorState(){
+  hideElevator();
+}
+

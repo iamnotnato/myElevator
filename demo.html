@@ -5,48 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>myElevator</title>
     <link rel="icon" type="image/x-icon" href="images/elevatoricon.png">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="css/bootstrap-utilities.min.css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
-    <link href="css/myELevator.css" rel="stylesheet">
-  
+    <link href="css/myELevator.css" rel="stylesheet">  
   </head>
 
-  <style> 
-    #myDIV #myDIV2{
-      border: 1px solid black;
-      background-color: lightblue;
-      width: 300px;
-      height: 300px;
-      position: relative;
-      top: 20px;
-    }
-  </style>
 
   <body>
     <header class="p-3 mb-3 border-bottom">
       <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center">
-     
+        <div class="d-flex flex-wrap align-items-center justify-content-center">     
             <img src="images/elevatoricon.png" height="50px" width="50px">
+            &nbsp;&nbsp;
+            <div class="vr"></div>
+            &nbsp;&nbsp;
             <h1>myElevator</h1>
-             </div>
+        </div>
       </div>
 
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center">
             <h4>A visual first step into coding!</h4>
-             </div>
+        </div>
       </div>
 
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active"><a href="#">Home</a></li>
-          <li class="breadcrumb-item" aria-current="page">Live Demo</li>
+          <li class="breadcrumb-item"><a href="home">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Live Demo</li>
         </ol>
       </nav>
     </header>  
@@ -94,14 +84,6 @@
             </div>
           </div>
 
-<!--
-        </div>
-        <div class="col">
-          <img src="images/elevatoriconbare.png" height="300px">
-        </div>
-
-      </div>
-      -->
     </div>
 
     <br>
@@ -123,7 +105,7 @@
               &nbsp;
               <h5 class="card-title">
                 
-                <button type="button" class="btn btn-outline-secondary">1</button>
+                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-arrows-left-right"></i>1</button>
                 <div class="vr"></div>
                 &nbsp;&nbsp;
                 <div class="vr"></div>
@@ -156,102 +138,12 @@
   </div>
 </div>
 
-<!--
-        </div>
-        <div class="col">
-          <img src="images/elevatoriconbare.png" height="300px">
-        </div>
-
-      </div>
-    </div>
-  -->
     <br>
     <hr>
 
 
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <img src="images/elevatorcabin.png" height="300px" id='i1' style="position:absolute;">
-        </div>
-      </div>
-    </div>
-    <!--
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <img src="images/elevatoriconbare.png" height="300px">
-        </div>
-        <div class="col">
-
-          <div class="card text-center">
-            <div class="card-header">
-              Second Floor
-            </div>
-            <div class="card-body">
-              &nbsp;
-              <h5 class="card-title">
-                
-                <button type="button" class="btn btn-outline-secondary">1</button>
-                <div class="vr"></div>
-                &nbsp;&nbsp;
-                <div class="vr"></div>
-                <button type="button" class="btn btn-outline-secondary">1</button>
-              </h5>
-              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-caret-up fa-2xl"></i></a>
-              <div class="vr"></div>
-              &nbsp;&nbsp;
-              <div class="vr"></div>
-              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-caret-down fa-2xl"></i></a>
-            </div>
-            &nbsp;
-            <div class="card-footer text-body-secondary">
-              Second Floor
-            </div>
-          </div>
-
-
-        </div>
-        <div class="col">
-          <img src="images/elevatoriconbare.png" height="300px">
-        </div>
-
-      </div>
-    </div>
-    <hr>
-
-    <!--
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-3">
-          <div id="myDIV">
-          <img src="images/elevatoriconbare.png" height="300px" id="myDIV">
-          <h4 id="myDIV">Elevator 1</h4>
-               <br>
-          <button onclick="myFunction()">Up</button>
-          <button onclick="myreverseFunction()">Down</button>
-        </div>
-        </div>
-
-
-        <div class="col-3">
-          <div id="myDIV2">
-            <img src="images/elevatoriconbare.png" height="300px" id='i1' style="position:absolute; left: 500; top: 100;">
-            <br><br><br><br>
-          <h4 id="myDIV">Elevator 2</h4>
-                    <br>
-          <button onclick="myFunction2()">Up</button>
-          <button onclick="myreverseFunction2()">Down</button>
-        </div>
-      </div>
-
-        <div class="col-6">
-          <p id="demo"></p>
-
-        </div>
-      </div>
-    </div>
-
+ 
+    
 <audio src="audio/elevatorMusic.mp3"></audio>
 <button type="button" id="audiobutton">
 <i class="fa-solid fa-volume-high"></i>
@@ -269,46 +161,13 @@ Logo
 
 Image by <a href="https://www.freepik.com/free-vector/elevator-with-light_2949598.htm#query=elevator%20interior&position=37&from_view=search&track=ais">Freepik</a>
 Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=38520">Pixabay</a>
-     <input type=button onClick=move_img('up') value='Up'>
-      <input type=button onClick=move_img('down') value='down'>
-<br>
-<input type=button onClick=move_img('left') value='Left'>
-<input type=button onClick=move_img('right') value='right'>
-<br>
-     <input type=button onClick=move_img('down') value='down'>
+Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=33242">Pixabay</a>
 
-   <script language='JavaScript' type='text/JavaScript'>
-    <!--
-    function move_img(str) {
-    var step=50; // change this to different step value
-    switch(str){
-    case "down":
-    var x=document.getElementById('i1').offsetTop;
-    x= x + step;
-    document.getElementById('i1').style.top= x + "px";
-    break;
-    
-    case "up":
-    var x=document.getElementById('i1').offsetTop;
-    x= x -step;
-    document.getElementById('i1').style.top= x + "px";
-    break;
-    
-    case "left":
-    var y=document.getElementById('i1').offsetLeft;
-    y= y - step;
-    document.getElementById('i1').style.left= y + "px";
-    break;
-    
-    case "right":
-    var y=document.getElementById('i1').offsetLeft;
-    y= y + step;
-    document.getElementById('i1').style.left= y + "px";
-    break;
-    }
-    }
-    //-->
-    </script>
+  <script language='JavaScript' type="module">
+  window.onload = function () {
+  defaultElevatorState();
+  }
+  </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -319,6 +178,7 @@ Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_
 <script src="js/bootstrap.esm.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/all.min.js"></script>
+<script src = "js/jquery-3.7.1.min.js"></script>
 
 </body>
 </html>
