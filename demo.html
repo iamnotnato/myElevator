@@ -43,18 +43,18 @@
 
     <aside>
       <h6>Input</h6>
-      <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+      <p id ="input">The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
     </aside>
 
     <aside2>
       <h6>Output</h6>
-      <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+      <p id ="output">The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
     </aside2>
 
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          <img src="images/elevatoricon.png" height="300px" style="position:relative;">
+          <img id='firstFloorElevator' src="images/elevatoricon.png" height="300px" style="position:relative;">
           <br>
           <br>
         </div>
@@ -90,7 +90,7 @@
 
 
 
-<button type="button" onClick=move_img('down') value='Down' class="btn btn-outline-secondary"><i class="fa-solid fa-caret-down fa-2xl"></i></button>
+<button type="button" id="groundFloorElevatorDownButton" onClick=move_img('down') value='Down' class="btn btn-outline-secondary"><i class="fa-solid fa-caret-down fa-2xl"></i></button>
 <br>
 <br>
 <button type="button" class="btn btn-outline-secondary disabled"><i class="fa-solid fa-lock fa-2xl"></i></button>
@@ -113,7 +113,7 @@
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          <img id='groundFloorElevator'src="images/elevatoricon.png" height="300px" style="position:relative;">
+          <img id='groundFloorElevator' src="images/elevatoricon.png" height="300px" style="position:relative;">
           <img id='i1 ttf-steps' src="images/elevatorcabin.png" height="300px" style="position:absolute;">
        
          
@@ -147,7 +147,7 @@
 <br>
 <br>
 
-<button type="button" onClick=move_img('up') value='Up' class="btn btn-outline-secondary"><i class="fa-solid fa-caret-up fa-2xl"></i></button>
+<button type="button" id="groundFloorElevatorUpButton" onClick=move_img('up') value='Up' class="btn btn-outline-secondary"><i class="fa-solid fa-caret-up fa-2xl"></i></button>
 <br>
 <br>
 <button type="button" class="btn btn-outline-secondary disabled"><i class="fa-solid fa-lock fa-2xl"></i></button>

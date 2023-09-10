@@ -1,3 +1,21 @@
+// Elevator Buttons
+const theGroundFloorElevatorUpButton = document.getElementById('groundFloorElevatorUpButton');
+const theGroundFloorElevatorDownButton = document.getElementById('groundFloorElevatorDownButton');
+
+// First Floor Elevator
+const firstFloorElevator = document.getElementById("firstFloorElevator");
+
+// Ground Floor Elevator
+const groundFloorElevator = document.getElementById("groundFloorElevator");
+
+// Cabin Elevator
+const cabinElevator = document.getElementById("i1 ttf-steps");
+
+// Show Output
+const outputDisplay = document.getElementById("output");
+
+// Elevator Audio Player
+
 const button = document.querySelector("#audiobutton");
 const icon = document.querySelector("#audiobutton > i");
 const audio = document.querySelector("audio");
@@ -19,60 +37,85 @@ button.addEventListener("click", () => {
 });
 
 
-document.getElementById("demo").innerHTML = 'Elevator Requested';
-
-function myFunction() {
-  document.getElementById("myDIV").style.position = "absolute";
-  document.getElementById("demo").innerHTML = 'Going Up';
-}
-
-function myFunction2() {
-  document.getElementById("myDIV2").style.position = "absolute";
-  document.getElementById("demo").innerHTML = 'Going Up';
-}
-
-function myreverseFunction() {
-  document.getElementById("myDIV").style.position = "relative";
-  document.getElementById("demo").innerHTML = 'Going Down';
-}
-
-function myreverseFunction2() {
-    document.getElementById("myDIV2").style.position = "relative";
-    document.getElementById("demo").innerHTML = 'Going Down';
-  }
-
-
+ // Move Elevator Cabin Up and Down
+  // Disable Respective Buttons 
   function move_img(str) {
     var step=420; // change this to different step value
     switch(str){
     case "down":
-    showElevator();
-    var x=document.getElementById('i1 ttf-steps').offsetTop;
+    showCabinElevator();
+    var x= cabinElevator.offsetTop;
     x= x + step;
-    document.getElementById('i1 ttf-steps').style.top= x + "px";
+    cabinElevator.style.top= x + "px";
+    disableGroundFloorElevatorButtons();
+    outputDisplay.innerHTML = 'Going Down';
+    hideGroundFloorElevator();
+    showfirstFloorElevator();
+    setTimeout( function() { hideCabinElevator(); }, 3000);
+    setTimeout( function() { showGroundFloorElevator(); }, 3000);
+
     break;
     
     case "up":
     showElevator();
-    var x=document.getElementById('i1 ttf-steps').offsetTop;
+    var x=cabinElevator.offsetTop;
     x= x -step;
-    document.getElementById('i1 ttf-steps').style.top= x + "px";
+    cabinElevator.style.top= x + "px";
+    disableFirstFloorElevatorButtons();
+    outputDisplay.innerHTML = 'Going Up';
+    hidefirstFlooElevator();
     break;
+    
     }
   }
 
-  function hideElevator() {
-    document.getElementById("i1 ttf-steps").style.visibility = "hidden";
+  // Hide Cabin Elevator
+  function hideCabinElevator() {
+  cabinElevator.style.visibility = "hidden";
   }
 
-  function showElevator() {
-    document.getElementById("i1 ttf-steps").style.visibility = "visible";
+  // Show Cabin Elevator
+  function showCabinElevator() {
+  cabinElevator.style.visibility = "visible";
   }
 
-function defaultElevatorState(){
-  hideElevator();
+  // Default Elevator State is Doors Closed
+  function defaultElevatorState(){
+    hideCabinElevator();
+  }
+
+  // Hide Ground Floor Elevator
+function hideGroundFloorElevator(){
+  groundFloorElevator.style.visibility = "hidden";
 }
 
-function groundFloor(){
-  document.getElementById("groundFloorElevator").style.visibility = "hidden";
+// Show Ground Floor Elevator
+function showGroundFloorElevator(){
+  groundFloorElevator.style.visibility = "visible";
 }
+
+  // Hide First Floor Elevator
+  function hidefirstFlooElevator(){
+    firstFloorElevator.style.visibility = "hidden";
+  }
+
+  // Show First Floor Elevator
+  function showfirstFlooElevator(){
+    firstFloorElevator.style.visibility = "visible";
+  }
+
+
+// Prevent Elevator From Passing Set Limits
+function disableFirstFloorElevatorButtons(){
+  theGroundFloorElevatorUpButton.classList.add("disabled");
+  theGroundFloorElevatorDownButton.classList.remove("disabled");
+}
+
+// Prevent Elevator From Passing Set Limits
+function disableGroundFloorElevatorButtons(){
+  theGroundFloorElevatorDownButton.classList.add("disabled");
+  theGroundFloorElevatorUpButton.classList.remove("disabled");
+}
+
+//setTimeout( function() { hideElevator(); }, 3000);
+//groundFloorElevator.style.visibility = "visible";
