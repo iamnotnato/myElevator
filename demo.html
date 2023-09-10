@@ -36,7 +36,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="home">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Live Demo</li>
+          <li class="breadcrumb-item active" aria-current="demo">Live Demo</li>
         </ol>
       </nav>
     </header>  
@@ -54,7 +54,9 @@
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          <img src="images/elevatoricon.png" height="300px" style="position:absolute;">
+          <img src="images/elevatoricon.png" height="300px" style="position:relative;">
+          <br>
+          <br>
         </div>
         <div class="col">
 
@@ -62,23 +64,44 @@
             <div class="card-header">
               First Floor
             </div>
+            
             <div class="card-body">
               &nbsp;
               <h5 class="card-title">
-                
-                <button type="button" class="btn btn-outline-secondary">1</button>
-                <div class="vr"></div>
-                &nbsp;&nbsp;
-                <div class="vr"></div>
-                <button type="button" class="btn btn-outline-secondary">1</button>
+                <button type="button" class="btn btn-outline-secondary"> G </button>  
               </h5>
-              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-caret-up fa-2xl"></i></a>
-              <div class="vr"></div>
-              &nbsp;&nbsp;
-              <div class="vr"></div>
-              <a href="#" class="btn btn-outline-secondary"><i class="fa-solid fa-caret-down fa-2xl"></i></a>
-            </div>
-            &nbsp;
+
+              <br>
+<!--button type="button" onclick="hideElevator()" class="btn btn-outline-secondary">Hide</button>
+<div class="vr"></div>
+&nbsp;&nbsp;
+<div class="vr"></div>
+<button type="button" onclick="showElevator()" class="btn btn-outline-secondary">Show</button>
+<br>
+<br-->
+<button type="button" onClick=move_img('down') value='Down' class="btn btn-outline-secondary"><i class="fa-solid fa-arrows-left-right fa-2xl"></i></button>
+<div class="vr"></div>
+&nbsp;
+<div class="vr"></div>
+<button type="button" onClick=move_img('down') value='Down' class="btn btn-outline-secondary">
+<i class="fa-solid fa-angles-right fa-xl"></i><i class="fa-solid fa-angles-left fa-xl"></i></button>
+<br>
+<br>
+
+
+
+<button type="button" onClick=move_img('down') value='Down' class="btn btn-outline-secondary"><i class="fa-solid fa-caret-down fa-2xl"></i></button>
+<br>
+<br>
+<button type="button" class="btn btn-outline-secondary disabled"><i class="fa-solid fa-lock fa-2xl"></i></button>
+<div class="vr"></div>
+&nbsp;&nbsp;
+<div class="vr"></div>
+<button type="button" class="btn btn-outline-secondary disabled"><i class="fa-solid fa-bell fa-2xl"></i></i></button>
+</div>
+&nbsp;
+
+
             <div class="card-footer text-body-secondary">
               First Floor
             </div>
@@ -86,14 +109,14 @@
 
     </div>
 
-    <br>
-
-    <hr>
   
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          <img src="images/elevatorcabin.png" height="300px" style="position:absolute;">
+          <img id='groundFloorElevator'src="images/elevatoricon.png" height="300px" style="position:relative;">
+          <img id='i1 ttf-steps' src="images/elevatorcabin.png" height="300px" style="position:absolute;">
+       
+         
         </div>
         <div class="col">
 
@@ -104,32 +127,34 @@
             <div class="card-body">
               &nbsp;
               <h5 class="card-title">
-                
-                <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-arrows-left-right"></i>1</button>
-                <div class="vr"></div>
-                &nbsp;&nbsp;
-                <div class="vr"></div>
-                <button type="button" class="btn btn-outline-secondary">1</button>
-                <br>
-
-                <button type="button" class="btn btn-outline-secondary">1</button>
-                <div class="vr"></div>
-                &nbsp;&nbsp;
-                <div class="vr"></div>
+                <button type="button" class="btn btn-outline-secondary"> G </button>  
               </h5>
 
-
-<button type="button" onClick=move_img('up') value='Up' class="btn btn-outline-secondary"><i class="fa-solid fa-caret-up fa-2xl"></i></button>
-<button type="button" onclick="hideElevator()" class="btn btn-outline-secondary">Hide</button>
-<button type="button" onClick=move_img('down') value='Down' class="btn btn-outline-secondary"><i class="fa-solid fa-lock fa-2xl"></i></button>
-<button type="button" onClick=move_img('down') value='Down' class="btn btn-outline-secondary"><i class="fa-solid fa-arrows-left-right"></i></button>
+              <br>
+<!--button type="button" onclick="hideElevator()" class="btn btn-outline-secondary">Hide</button>
 <div class="vr"></div>
 &nbsp;&nbsp;
 <div class="vr"></div>
 <button type="button" onclick="showElevator()" class="btn btn-outline-secondary">Show</button>
-<button type="button" onClick=move_img('down') value='Down' class="btn btn-outline-secondary"><i class="fa-solid fa-caret-down fa-2xl"></i></button>
-<button type="button" onClick=move_img('down') value='Down' class="btn btn-outline-secondary"><i class="fa-solid fa-bell fa-2xl"></i></i></button>
-<button type="button" onClick=move_img('down') value='Down' class="btn btn-outline-secondary"><i class="fa-solid fa-angles-right fa-2xl"></i></button>
+<br>
+<br-->
+<button type="button" onClick=move_img('down') value='Down' class="btn btn-outline-secondary"><i class="fa-solid fa-arrows-left-right fa-2xl"></i></button>
+<div class="vr"></div>
+&nbsp;
+<div class="vr"></div>
+<button type="button" onClick=move_img('down') value='Down' class="btn btn-outline-secondary">
+<i class="fa-solid fa-angles-right fa-xl"></i><i class="fa-solid fa-angles-left fa-xl"></i></button>
+<br>
+<br>
+
+<button type="button" onClick=move_img('up') value='Up' class="btn btn-outline-secondary"><i class="fa-solid fa-caret-up fa-2xl"></i></button>
+<br>
+<br>
+<button type="button" class="btn btn-outline-secondary disabled"><i class="fa-solid fa-lock fa-2xl"></i></button>
+<div class="vr"></div>
+&nbsp;&nbsp;
+<div class="vr"></div>
+<button type="button" class="btn btn-outline-secondary disabled"><i class="fa-solid fa-bell fa-2xl"></i></i></button>
 </div>
 &nbsp;
 
@@ -139,7 +164,7 @@
 </div>
 
     <br>
-    <hr>
+
 
 
  
@@ -162,6 +187,7 @@ Logo
 Image by <a href="https://www.freepik.com/free-vector/elevator-with-light_2949598.htm#query=elevator%20interior&position=37&from_view=search&track=ais">Freepik</a>
 Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=38520">Pixabay</a>
 Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=33242">Pixabay</a>
+
 
   <script language='JavaScript' type="module">
   window.onload = function () {

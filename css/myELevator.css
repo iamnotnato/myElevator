@@ -34,3 +34,6 @@ aside2 {
   height: 75vh;
 }
 
+.i1.ttf-steps {
+  transition-delay: 1000ms;
+}

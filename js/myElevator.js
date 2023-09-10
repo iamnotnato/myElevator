@@ -43,32 +43,36 @@ function myreverseFunction2() {
 
 
   function move_img(str) {
-    var step=125; // change this to different step value
+    var step=420; // change this to different step value
     switch(str){
     case "down":
-    var x=document.getElementById('i1').offsetTop;
+    showElevator();
+    var x=document.getElementById('i1 ttf-steps').offsetTop;
     x= x + step;
-    document.getElementById('i1').style.top= x + "px";
+    document.getElementById('i1 ttf-steps').style.top= x + "px";
     break;
     
     case "up":
-    var x=document.getElementById('i1').offsetTop;
+    showElevator();
+    var x=document.getElementById('i1 ttf-steps').offsetTop;
     x= x -step;
-    document.getElementById('i1').style.top= x + "px";
+    document.getElementById('i1 ttf-steps').style.top= x + "px";
     break;
-  }
+    }
   }
 
   function hideElevator() {
-    document.getElementById("i1").style.visibility = "hidden";
+    document.getElementById("i1 ttf-steps").style.visibility = "hidden";
   }
 
   function showElevator() {
-    document.getElementById("i1").style.visibility = "visible";
+    document.getElementById("i1 ttf-steps").style.visibility = "visible";
   }
-
 
 function defaultElevatorState(){
   hideElevator();
 }
 
+function groundFloor(){
+  document.getElementById("groundFloorElevator").style.visibility = "hidden";
+}
