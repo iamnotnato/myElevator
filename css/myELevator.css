@@ -37,3 +37,7 @@ aside2 {
 .i1.ttf-steps {
   transition-delay: 1000ms;
 }
+
+audio {
+  display: none;
+}
