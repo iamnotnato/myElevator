@@ -1,3 +1,38 @@
+// Default Elevator Cabin State is Elevators Doors Closed 
+function defaultElevatorCabinState(){
+  document.getElementById("cabinElevator").style.visibility = "hidden";
+}
+
+// Show Cabin Elevator (Inside The Elevator)
+function showCabinElevator() {
+  document.getElementById("cabinElevator").style.visibility = "visible";
+ }
+
+ // Move Elevator Cabin Up and Down
+ function move_img(str) {
+  var step = 420;
+  switch(str) {  
+  
+  // Elevator is going down!
+  case "down":
+  showCabinElevator()
+  var x = document.getElementById("cabinElevator").offsetTop;
+  x = x + step;
+  document.getElementById("cabinElevator").style.top = x + "px";
+  break;
+
+  // Elevator is going up!
+  case "up":
+  showCabinElevator()
+  var x = document.getElementById("cabinElevator").offsetTop;
+  x = x - step;
+  document.getElementById("cabinElevator").style.top= x + "px";
+  break;
+  }
+}
+
+
+
 // Show Output To The User In The Textbox
 //const outputDisplay = document.getElementById("output");
 
@@ -16,10 +51,12 @@
 
 // Elevator Audio Player
 
-var audioElement = document.createElement('audio');
-audioElement.setAttribute('src', '../audio/elevatorMusic.mp3');
+//var audioElement = document.createElement('audio');
+///audioElement.setAttribute('src', '../audio/elevatorMusic.mp3');
 
-audioElement.load();
+//audioElement.load();
+
+/*
 audioElement.addEventListener("canplay", function() {
   audioElement.play();
 }, true);
@@ -41,33 +78,9 @@ $(document).on('click', '.pause', function() {
   audioElement.pause();
   $(this).removeClass('pause').addClass('play');
   $('a .fa-volume-up').removeClass('fa-volume-up').addClass('fa-volume-off');
-});
+}); */ 
 
- // Move Elevator Cabin Up and Down
-  // Disable Respective Buttons 
-  function move_img(str) {
-    var step = 420; // change this to different step value
-    switch(str){
-    case "down":
-    var x= document.getElementById("cabinElevator").offsetTop;
-    x= x + step;
-    document.getElementById("cabinElevator").style.top= x + "px";
-    break;
 
-    case "up":
-    var x= document.getElementById("cabinElevator").offsetTop;
-    x= x - step;
-    document.getElementById("cabinElevator").style.top= x + "px";
-    break;
-    
-    //case "up":
-    //var x=document.getElementById("cabinElevator").offsetTop;
-    //x= x -step;
-    //document.getElementById("cabinElevator").style.top= x + "px";
-    //document.getElementById("output").innerHTML = 'Going Up';
-    //break;    
-    }
-  }
 
   // Hide Cabin Elevator
   //function hideCabinElevator() {
@@ -79,10 +92,6 @@ $(document).on('click', '.pause', function() {
    // document.getElementById("cabinElevator").style.visibility = "visible";
  // }
 
-  // Default Elevator State is Doors Closed
- // function defaultElevatorState(){
-   // hideCabinElevator();
- // }
 
   // Hide Ground Floor Elevator
 //function hideGroundFloorElevator(){
