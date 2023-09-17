@@ -14,41 +14,6 @@ aside2 {
   height: 75vh;
 }
 
-/*
-Desktop 4K 1X Scale Media Query for min-width:
-@media only screen and (min-width: 3840px)
-{  Your Styles...  }
-Desktop 4K 1X Scale Media Query for min-height:
-@media only screen and (min-height: 2160px)
-{  Your Styles...  }
-Desktop 4K 1X Scale Media Query for landscape orientation:
-@media only screen and (min-width: 3840px) and (orientation: landscape)
-{  Your Styles...  }
-Desktop 4K 1X Scale Media Query for portrait orientation:
-@media only screen and (min-width: 2160px) and (orientation: portrait)
-{  Your Styles...  }
-Desktop 4K 1X Scale Media Query for device pixel ratio:
-@media only screen and (-webkit-min-device-pixel-ratio: 1),
-                    only screen and (min--moz-device-pixel-ratio: 1),
-                    only screen and (-o-min-device-pixel-ratio: 1/1),
-                    only screen and (min-device-pixel-ratio: 1)
-{   Your Styles here } */
-
-/* Extra small devices (phones, 600px and down) 
-@media only screen and (max-width: 600px) {...}
-
-/* Small devices (portrait tablets and large phones, 600px and up) 
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) 
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) 
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) {...} */
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #cabinElevator{
@@ -60,13 +25,13 @@ Desktop 4K 1X Scale Media Query for device pixel ratio:
   #groundFloorElevator{
   height: 200px;
   position:relative;
-  left: -1%;
+  left: 0%;
   }
     
   #firstFloorElevator {
   height: 200px;
   position:relative;
-  left: 0%;
+  left: 1%;
   }
 }
 
@@ -81,13 +46,13 @@ Desktop 4K 1X Scale Media Query for device pixel ratio:
   #groundFloorElevator{
   height: 250px;
   position:relative;
-  left: -1%;
+  left: 0%;
   }
       
   #firstFloorElevator {
   height: 250px;
   position:relative;
-  left: 0%;
+  left: 1%;
   }
 }
 
@@ -103,13 +68,13 @@ Desktop 4K 1X Scale Media Query for device pixel ratio:
   #groundFloorElevator{
   height: 300px;
   position:relative;
-  left: -1%;
+  left: 0%;
   }
         
   #firstFloorElevator {
   height: 300px;
   position:relative;
-  left: 0%;
+  left: 1%;
   }
 }
 
@@ -124,13 +89,13 @@ Desktop 4K 1X Scale Media Query for device pixel ratio:
   #groundFloorElevator{
   height: 300px;
   position:relative;
-  left: -1%;
+  left: 0%;
   }
   
   #firstFloorElevator {
   height: 300px;
   position:relative;
-  left: 0%;
+  left: 1%;
   }
 }
 
@@ -139,7 +104,7 @@ Desktop 4K 1X Scale Media Query for device pixel ratio:
   #cabinElevator{
   height: 350px;
   position:absolute;
-  left: 24%;
+  left: 24.25%;
   }
   
   #groundFloorElevator{
@@ -151,7 +116,7 @@ Desktop 4K 1X Scale Media Query for device pixel ratio:
   #firstFloorElevator {
   height: 350px;
   position:relative;
-  left: 0%;
+  left: 1%;
   }
 } 
 
