@@ -46,7 +46,7 @@ $(document).on('click', '.pause', function() {
  // Move Elevator Cabin Up and Down
   // Disable Respective Buttons 
   function move_img(str) {
-    var step=420; // change this to different step value
+    var step = 395; // change this to different step value
     switch(str){
     case "down":
     var x= document.getElementById("cabinElevator").offsetTop;

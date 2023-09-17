@@ -1,23 +1,3 @@
-section {
-    height: 25vh;
-  }
-  section:nth-child(1) {
-    background: lightblue;
-  }
-  section:nth-child(2) {
-    background: lightgreen;
-  }
-  section:nth-child(3) {
-    background: purple;
-  }
-  section:nth-child(4) {
-    background: red;
-  }
-  section:nth-child(5) {
-    background: yellow;
-  } 
-
-
 aside {
   width: 200px;
   border: 1px solid black;
@@ -32,14 +12,6 @@ aside2 {
   margin: 10px;
   float: right;
   height: 75vh;
-}
-
-.i1.ttf-steps {
-  transition-delay: 1000ms;
-}
-
-audio {
-  display: none;
 }
 
 /*
@@ -165,19 +137,19 @@ Desktop 4K 1X Scale Media Query for device pixel ratio:
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   #cabinElevator{
-  height: 300px;
+  height: 350px;
   position:absolute;
-  left: 25%;
+  left: 24%;
   }
   
   #groundFloorElevator{
-  height: 300px;
+  height: 350px;
   position:relative;
-  left: -1%;
+  left: 0%;
   }
   
   #firstFloorElevator {
-  height: 300px;
+  height: 350px;
   position:relative;
   left: 0%;
   }
