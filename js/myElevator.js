@@ -1,6 +1,8 @@
 // Default Elevator Cabin State is Elevators Doors Closed 
 function defaultElevatorCabinState(){
   document.getElementById("cabinElevator").style.visibility = "hidden";
+  //Elevator is at the ground floor
+  disableFirstFloorElevatorButtons();
 }
 
 // Show Cabin Elevator (Inside The Elevator)
@@ -15,7 +17,8 @@ function showCabinElevator() {
   
   // Elevator is going down!
   case "down":
-  showCabinElevator()
+  showCabinElevator();
+  disableFirstFloorElevatorButtons();
   var x = document.getElementById("cabinElevator").offsetTop;
   x = x + step;
   document.getElementById("cabinElevator").style.top = x + "px";
@@ -23,7 +26,8 @@ function showCabinElevator() {
 
   // Elevator is going up!
   case "up":
-  showCabinElevator()
+  showCabinElevator();
+  disableGroundFloorElevatorButtons();
   var x = document.getElementById("cabinElevator").offsetTop;
   x = x - step;
   document.getElementById("cabinElevator").style.top= x + "px";
@@ -31,7 +35,17 @@ function showCabinElevator() {
   }
 }
 
+// Prevent Ground Floor Elevator From Passing Set Limits
+function disableGroundFloorElevatorButtons(){
+  document.getElementById('groundFloorElevatorUpButton').classList.add("disabled");
+  document.getElementById('firstFloorElevatorDownButton').classList.remove("disabled");
+}
 
+// Prevent First Floor Elevator From Passing Set Limits
+function disableFirstFloorElevatorButtons(){
+  document.getElementById('firstFloorElevatorDownButton').classList.add("disabled");
+  document.getElementById('groundFloorElevatorUpButton').classList.remove("disabled");
+}
 
 // Show Output To The User In The Textbox
 //const outputDisplay = document.getElementById("output");
@@ -114,17 +128,7 @@ $(document).on('click', '.pause', function() {
   //}
 
 
-// Prevent Elevator From Passing Set Limits
-//function disableFirstFloorElevatorButtons(){
-  //document.getElementById('groundFloorElevatorUpButton').classList.add("disabled");
-  //document.getElementById('groundFloorElevatorDownButton').classList.remove("disabled");
-//}
 
-// Prevent Elevator From Passing Set Limits
-//function disableGroundFloorElevatorButtons(){
-  //document.getElementById('groundFloorElevatorDownButton').classList.add("disabled");
-  //document.getElementById('groundFloorElevatorUpButton').classList.remove("disabled");
-//}
 
 //setTimeout( function() { hideElevator(); }, 3000);
 //groundFloorElevator.style.visibility = "visible";

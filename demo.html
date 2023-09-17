@@ -16,6 +16,18 @@
 
 
   <body>
+
+
+        <div id="overlayer"></div>
+          <div class="preloader">
+            <div class="loader">
+              <span class="loader-inner"></span>
+            </div>
+              <p> Loading...</p>
+    </div>
+  </div>
+
+
     <header class="p-3 mb-3 border-bottom">
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center">     
@@ -87,7 +99,7 @@
 <br>
 
 <!-- Down Button Icon-->
-<button type="button" id="groundFloorElevatorDownButton" onClick=move_img('down') value='Down' class="btn btn-outline-secondary"><i class="fa-solid fa-caret-down fa-2xl"></i></button>
+<button type="button" id="firstFloorElevatorDownButton" onClick=move_img('down') value='Down' class="btn btn-outline-secondary"><i class="fa-solid fa-caret-down fa-2xl"></i></button>
 
 <br>
 <br>
@@ -154,7 +166,7 @@
 <br>
 
 <!-- Up Button Icon-->
-<button type="button" onClick=move_img('up') value='Up' class="btn btn-outline-secondary"><i class="fa-solid fa-caret-up fa-2xl"></i></button>
+<button type="button" id="groundFloorElevatorUpButton" onClick=move_img('up') value='Up' class="btn btn-outline-secondary"><i class="fa-solid fa-caret-up fa-2xl"></i></button>
 
 <br>
 <br>
@@ -223,21 +235,30 @@
   </div>
 </div>
 
+<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+   $(window).load(function() {
+   $(".preloader").delay(5000).fadeOut("slow");
+   $("#overlayer").delay(5000).fadeOut("slow");
+   })
+</script>
+
   <script language='JavaScript' type="module">
   window.onload = function () {
   defaultElevatorCabinState();
   }
   </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-<script src="js/myElevator.js"></script>
+<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<script src = "js/myElevator.js"></script>
 
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/bootstrap.esm.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/all.min.js"></script>
+<script src = "js/bootstrap.bundle.min.js"></script>
+<script src = "js/bootstrap.esm.min.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+<script src = "js/all.min.js"></script>
 <script src = "js/jquery-3.7.1.min.js"></script>
 
 </body>
