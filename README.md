@@ -34,13 +34,16 @@
 
 ![Alt](https://repobeats.axiom.co/api/embed/007ec0debef7cf33d24c7233257ec241c0d82bef.svg "Repobeats analytics image")
 
-Music
-Elevator Music
-aeiouFU
+Credits :
+<p>Image by <a href="https://www.freepik.com/free-vector/elevator-with-light_2949598.htm#query=elevator%20interior&position=37&from_view=search&track=ais">Freepik</a></p>
 
-https://www.youtube.com/watch?v=jj0ChLVTpaA&ab_channel=aeiouFU
+<p>Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=38520">Pixabay</a></p>
 
+<p>Logo<a href="https://www.vecteezy.com/free-vector/elevator-logo">Elevator Logo Vectors by Vecteezy</a></p>
 
-
-Logo
-   <a href="https://www.vecteezy.com/free-vector/elevator-logo">Elevator Logo Vectors by Vecteezy</a>
+<p>
+George Street Shuffle by Kevin MacLeod | https://incompetech.com/
+Music promoted by https://www.chosic.com/free-music/all/
+Creative Commons Creative Commons: By Attribution 3.0 License
+http://creativecommons.org/licenses/by/3.0/
+</p>
