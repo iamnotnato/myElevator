@@ -43,7 +43,10 @@ Credits :
 
 <p>
 George Street Shuffle by Kevin MacLeod | https://incompetech.com/
+<br>
 Music promoted by https://www.chosic.com/free-music/all/
+<br>
 Creative Commons Creative Commons: By Attribution 3.0 License
+<br>
 http://creativecommons.org/licenses/by/3.0/
 </p>
