@@ -41,3 +41,96 @@ aside2 {
 audio {
   display: none;
 }
+
+/*
+Desktop 4K 1X Scale Media Query for min-width:
+@media only screen and (min-width: 3840px)
+{  Your Styles...  }
+Desktop 4K 1X Scale Media Query for min-height:
+@media only screen and (min-height: 2160px)
+{  Your Styles...  }
+Desktop 4K 1X Scale Media Query for landscape orientation:
+@media only screen and (min-width: 3840px) and (orientation: landscape)
+{  Your Styles...  }
+Desktop 4K 1X Scale Media Query for portrait orientation:
+@media only screen and (min-width: 2160px) and (orientation: portrait)
+{  Your Styles...  }
+Desktop 4K 1X Scale Media Query for device pixel ratio:
+@media only screen and (-webkit-min-device-pixel-ratio: 1),
+                    only screen and (min--moz-device-pixel-ratio: 1),
+                    only screen and (-o-min-device-pixel-ratio: 1/1),
+                    only screen and (min-device-pixel-ratio: 1)
+{   Your Styles here } */
+
+/* Extra small devices (phones, 600px and down) 
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) 
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) 
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) 
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...} */
+
+
+/* Desktop 4K 1X Scale Media Query for min-width: */
+@media only screen and (min-width: 3840px){
+  #cabinElevator{
+  height: 500px;
+  }
+
+  #groundFloorElevator{
+  height: 500px;
+  }
+
+  #firstFloorElevator {
+  height: 500px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up)  */
+@media only screen and (min-width: 992px){
+  #cabinElevator{
+  height: 300px;
+  position:absolute;
+  left: 25%;
+  }
+  
+  #groundFloorElevator{
+  height: 300px;
+  position:relative;
+  left: -1%;
+  }
+  
+  #firstFloorElevator {
+  height: 300px;
+  position:relative;
+  left: 0%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #cabinElevator{
+  height: 300px;
+  position:absolute;
+  left: 25%;
+  }
+  
+  #groundFloorElevator{
+  height: 300px;
+  position:relative;
+  left: -1%;
+  }
+  
+  #firstFloorElevator {
+  height: 300px;
+  position:relative;
+  left: 0%;
+  }
+} 

@@ -12,7 +12,7 @@
 //const groundFloorElevator = document.getElementById("groundFloorElevator");
 
 // Cabin Elevator
-//const cabinElevator = document.getElementById("i1 ttf-steps");
+//const cabinElevator = document.getElementById("cabinElevator");
 
 // Elevator Audio Player
 
@@ -49,21 +49,21 @@ $(document).on('click', '.pause', function() {
     var step=420; // change this to different step value
     switch(str){
     case "down":
-    var x= document.getElementById("i1 ttf-steps").offsetTop;
+    var x= document.getElementById("cabinElevator").offsetTop;
     x= x + step;
-    document.getElementById("i1 ttf-steps").style.top= x + "px";
+    document.getElementById("cabinElevator").style.top= x + "px";
     break;
 
     case "up":
-    var x= document.getElementById("i1 ttf-steps").offsetTop;
+    var x= document.getElementById("cabinElevator").offsetTop;
     x= x - step;
-    document.getElementById("i1 ttf-steps").style.top= x + "px";
+    document.getElementById("cabinElevator").style.top= x + "px";
     break;
     
     //case "up":
-    //var x=document.getElementById("i1 ttf-steps").offsetTop;
+    //var x=document.getElementById("cabinElevator").offsetTop;
     //x= x -step;
-    //document.getElementById("i1 ttf-steps").style.top= x + "px";
+    //document.getElementById("cabinElevator").style.top= x + "px";
     //document.getElementById("output").innerHTML = 'Going Up';
     //break;    
     }
@@ -71,12 +71,12 @@ $(document).on('click', '.pause', function() {
 
   // Hide Cabin Elevator
   //function hideCabinElevator() {
-   // document.getElementById("i1 ttf-steps").style.visibility = "hidden";
+   // document.getElementById("cabinElevator").style.visibility = "hidden";
  // }
 
   // Show Cabin Elevator (Inside The Elevator)
   //function showCabinElevator() {
-   // document.getElementById("i1 ttf-steps").style.visibility = "visible";
+   // document.getElementById("cabinElevator").style.visibility = "visible";
  // }
 
   // Default Elevator State is Doors Closed
