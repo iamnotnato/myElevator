@@ -39,7 +39,7 @@ Credits :
 
 <p>Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=38520">Pixabay</a></p>
 
-<p>Logo<a href="https://www.vecteezy.com/free-vector/elevator-logo">Elevator Logo Vectors by Vecteezy</a></p>
+<p><a href="https://www.vecteezy.com/free-vector/elevator-logo">Elevator Logo Vectors by Vecteezy</a></p>
 
 <p>
 George Street Shuffle by Kevin MacLeod | https://incompetech.com/
