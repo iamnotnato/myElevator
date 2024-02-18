@@ -50,3 +50,71 @@ Creative Commons Creative Commons: By Attribution 3.0 License
 <br>
 http://creativecommons.org/licenses/by/3.0/
 </p>
+
+
+
+# myElevator
+
+## Purpose
+
+myElevator is a simple command-line application that simulates an elevator system. It allows users to create elevators, add and remove passengers, and move the elevators up and down.
+
+## Features
+
+* Create and manage multiple elevators
+* Add and remove passengers to elevators
+* Move elevators up and down
+* Display the current status of the elevator system
+
+## Technologies Used
+
+* Python 3.6+
+* Click
+* rich
+
+## Getting Started
+
+To get started with myElevator, follow these steps:
+
+1. Clone the repository:
+
+```
+git clone https://github.com/iamnotnato/myElevator.git
+```
+
+2. Install the dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+3. Run the program:
+
+```
+python elevator.py
+```
+
+## Usage
+
+To use myElevator, type commands into the command-line interface. 
+
+The following commands are available:
+
+* `create elevator`: Creates a new elevator.
+* `add passenger`: Adds a passenger to an elevator.
+* `remove passenger`: Removes a passenger from an elevator.
+* `move elevator`: Moves an elevator up or down.
+* `status`: Displays the current status of the elevator system.
+* `quit`: Quits the program.
+
+## Contribution Guidelines
+
+Contributions to myElevator are welcome! Please read the [contributing guidelines](https://github.com/iamnotnato/myElevator/blob/main/CONTRIBUTING.md) before submitting a pull request.
+
+## License
+
+myElevator is licensed under the MIT License. See the [LICENSE](https://github.com/iamnotnato/myElevator/blob/main/LICENSE) file for details.
+
+### Contact
+
+For any questions or support, please contact the maintainer through [GitHub](https://github.com/iamnotnato).
